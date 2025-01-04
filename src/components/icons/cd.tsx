@@ -8,7 +8,7 @@ const CDIcon = (props: CDIconProps) => (
     xmlSpace="preserve"
     fill="#2ecc71"
     style={{
-      enableBackground: "new 0 0 122.88 122.88",
+      background: "new 0 0 122.88 122.88",
     }}
     viewBox="0 0 122.88 122.88"
     {...props}

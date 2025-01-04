@@ -33,18 +33,25 @@ const revenueData = [
 ];
 
 export function RevenueDistribution() {
-  const [selectedSource, setSelectedSource] = useState(null);
+  const [selectedSource, setSelectedSource] = useState<string | null>(null);
 
   const totalRevenue = useMemo(() => {
     return revenueData.reduce((acc, curr) => acc + curr.revenue, 0);
   }, []);
 
+  interface ChartConfig {
+    [key: string]: { 
+      label: string;
+      color?: string;
+    };
+  }
+
   const chartConfig = useMemo(() => {
-    const config = {
+    const config: ChartConfig = {
       revenue: { label: "Revenue" },
     };
     revenueData.forEach((item) => {
-      (config as any)[item.source] = {
+      config[item.source] = {
         label: item.source,
         color: item.fill,
       };
@@ -52,7 +59,14 @@ export function RevenueDistribution() {
     return config;
   }, []);
 
-  const handlePieClick = (entry:any) => {
+  interface RevenueEntry {
+    source: string;
+    revenue: number;
+    fill: string;
+  }
+  
+
+  const handlePieClick = (entry: RevenueEntry) => {
     setSelectedSource(selectedSource === entry.source ? null : entry.source);
   };
 
