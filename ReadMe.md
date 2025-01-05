@@ -45,6 +45,8 @@ brew install bun
 bun i
 
 bun dev
+
+bun run build
 ```
 
 ### Project Structure
