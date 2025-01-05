@@ -86,9 +86,9 @@ brew install bun
 
 bun i
 
-bun dev
+bun dev       <==>    npm run dev
 
-bun run build
+bun run build  <==>    npm run build
 ```
 
 This will start the development server and the project will be accessible in your browser, typically at 
