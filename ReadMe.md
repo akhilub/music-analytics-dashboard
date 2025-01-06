@@ -44,26 +44,26 @@ A modern analytics dashboard for the Streamify music streaming service, built wi
 
 ## Thought Process
 
-1. Component Design:
+1. **Component Design:**
 
    - The project was broken down into modular components for better maintainability.
    - Components were created for metrics, data visualizations, and the data table to separate concerns.
 
-2. State Management:
+2. **State Management:**
 
    - Redux was used to manage the state of the sidebar and user information.
    - The dashboard pulls state information to determine layout adjustments and display personalized content.
 
-3. Responsiveness:
+3. **Responsiveness:**
 
    - Tailwind CSS was used to ensure that the dashboard is responsive across different devices.
    - Used ShadCN for better and responsive design.
 
-4. Mock Data:
+4. **Mock Data:**
 
    - Mock data was used for charts and tables.
 
-5. Performance Considerations:
+5. **Performance Considerations:**
 
    - Memoization and lazy loading were applied to improve performance where necessary.
    - State changes and layout adjustments are optimized to prevent unnecessary re-renders.
