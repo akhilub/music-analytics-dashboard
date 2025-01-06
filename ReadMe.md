@@ -17,6 +17,7 @@ A modern analytics dashboard for the Streamify music streaming service, built wi
   - 📖 Sorting and Filtering functionalities for recent streams
 
 - Bonus Features:
+  - PWA for adaptablity to several devices and user focus for important tasks  
   - Implemented sorting and filtering for data tables.
   - Interactive charts, allowing hover and click actions for deeper insights.
 
