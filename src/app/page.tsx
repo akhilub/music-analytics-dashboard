@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 xl:grid-cols-2 gap-4 px-4 ">
           <TopArtist />
           <TopFiveStreamedSongs />
         </div>
