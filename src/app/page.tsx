@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-1 gap-4">
       <div className="col-span-1 @5xl/dashboard:col-span-2 flex flex-1 flex-col gap-4 @container/key-metrics">
-        <div className="grid auto-rows-min gap-4 @2xl/key-metrics:grid-cols-4">
+        <div className="grid auto-rows-min gap-4 @2xl/key-metrics:grid-cols-4 w-full">
           <KeyMetrics />
         </div>
 
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <TopArtist />
           <TopFiveStreamedSongs />
         </div>

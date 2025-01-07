@@ -27,9 +27,9 @@ export function KeyMetricsCard({
   children,
 }: KeyMetricsCardProps) {
   return (
-    <Card>
+    <Card >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="text-sm font-medium">{title}</CardTitle>
+        <CardTitle className="text-sm font-medium truncate">{title}</CardTitle>
         <Tooltip>
           <TooltipTrigger>
             <Icon
@@ -43,7 +43,7 @@ export function KeyMetricsCard({
         </Tooltip>
       </CardHeader>
       <CardContent>
-        <div className="text-2xl font-bold">{value.toLocaleString()}</div>
+        <div className="text-2xl font-bold truncate">{value.toLocaleString()}</div>
         {children}
       </CardContent>
     </Card>
