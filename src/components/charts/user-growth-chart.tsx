@@ -65,7 +65,7 @@ export function UserGrowthChart() {
   };
 
   return (
-    <Card className="">
+    <Card className="lg:h-[800px]">
       <CardHeader>
         <CardTitle>User growth metrics</CardTitle>
         <CardDescription>
