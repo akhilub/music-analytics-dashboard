@@ -14,23 +14,20 @@ export default function Home() {
           <KeyMetrics />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:h-[700px] lg:h-[1000px]">
-          <div className="col-span-1 md:col-span-3 md:h-[700px] lg:h-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 h-auto">
+          <div className="col-span-1 md:col-span-3 min-h-[400px] h-full">
             <UserGrowthChart />
           </div>
-          <div className="col-span-1 md:col-span-2 md:h-[700px] lg:h-[1000px]">
+          <div className="col-span-1 md:col-span-2 min-h-[400px] h-full">
             <RevenueDistribution />
           </div>
         </div>
 
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:-mt-48">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <TopArtist />
           <TopFiveStreamedSongs />
         </div>
       </div>
-
-
 
       <div className="flex flex-col gap-4 col-span-1">
         <RecentStreamsTable />

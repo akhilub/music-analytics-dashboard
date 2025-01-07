@@ -75,7 +75,7 @@ export function RevenueDistribution() {
     : revenueData;
 
   return (
-    <Card className="flex flex-col lg:h-[800px]">
+    <Card className="flex flex-col h-full">
       <CardHeader className="pb-4">
         <CardTitle>Revenue Distribution</CardTitle>
         <CardDescription>December 2024</CardDescription>
