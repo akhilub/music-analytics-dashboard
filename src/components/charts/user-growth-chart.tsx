@@ -67,21 +67,26 @@ export function UserGrowthChart() {
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardTitle>User growth metrics</CardTitle>
-        <CardDescription>
-          Showing total and active users for the last 12 months
-        </CardDescription>
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-4 pb-8">
 
-        <div className="ml-auto pb-8">
+        <div>
+          <CardTitle>User growth metrics</CardTitle>
+          <CardDescription>
+            Showing total and active users for the last 12 months
+          </CardDescription>
+        </div>
+
+        <div>
           <DateRangeSelector
             date={date}
             setDate={
               handleSetDate as React.Dispatch<
-                React.SetStateAction<DateRange | undefined>
+              React.SetStateAction<DateRange | undefined>
               >
             }
-          />
+            />
         </div>
+      </div>
 
         <div className="flex">
           <button
