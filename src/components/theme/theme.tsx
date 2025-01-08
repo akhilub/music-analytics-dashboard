@@ -41,6 +41,7 @@
 //   );
 // }
 
+
 //Idea1 : Toggle between light and dark theme instead of dropdown menu
 
 // "use client";
@@ -89,15 +90,13 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    if (theme === "system") {
-      setTheme("dark");
-    } else if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("system");
-    }
+    setTheme(theme === "dark" ? "light" : "dark");
   };
-  
+
+  React.useEffect(() => {
+    setTheme("system");
+  }, []);
+
   return (
     <TooltipProvider>
       <Tooltip>
